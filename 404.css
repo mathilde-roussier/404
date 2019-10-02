@@ -1,0 +1,122 @@
+/* HTML */
+html{
+	background-image:url(images/gif.webp);
+	background-size:50%;
+	background-repeat:no-repeat;
+}
+
+body{
+	margin-top:0;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	height:100%;
+}
+
+main {
+    display: flex;
+	flex-direction:column;
+	justify-content: space-around;
+	align-items:center;
+	height:100%;
+	background-image:linear-gradient(to right, white, #E6B0AA, #78281F);
+	background-size:50%;
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+section{
+	align-self:flex-end;
+	margin-right:10%;
+	width:50%;
+	font-size:35px;
+	text-align:center;
+	font-family: 'Finger Paint', cursive;
+	height:33%;
+}
+
+section > p{
+	background-image:url(images/corde.png);
+	background-position:center;
+	background-size:20%;}
+
+article {
+	display:flex;
+	align-self:flex-start;
+	justify-content: space-between;
+	align-items:center;
+	width:50%;
+	font-size:100pt;
+	font-family: 'Wallpoet', cursive;
+	color:#A93226;
+	height:33%;
+}
+
+article > p {
+	margin-top:11%;
+	margin-bottom:0;
+}
+
+aside {
+	flex-direction:column;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	align-self:flex-end;
+	font-family: 'Finger Paint', cursive;
+	font-size:18px;
+	height:33%;
+	margin-right:50px;
+}
+
+#noproblem{
+	font-size:25pt;
+	color:#A93226;
+}
+
+aside > p{
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
+a{
+	display:flex;
+	height:50%;
+	align-items:center;
+	justify-content: center;
+	width: 700px;
+	height: 700px;
+	filter: grayscale(0) blur(0px);
+	transition: all 0.5s ease;
+}
+
+#img1{
+	width:50%;
+}
+
+#img2{
+	width:10%;
+}
+
+/* Animation image */
+
+a:hover{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	transform: rotate(360deg);
+}
+
+/* Animation */
+
+@keyframes Animation{
+    0%{
+        transform: rotate(720deg) scale(1);
+        }
+    100%{
+        }
+}
+
+#Anime{
+    animation: Animation 2s 1 0s ease-in-out;
+}
